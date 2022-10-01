@@ -1,0 +1,67 @@
+.header-informacoes {
+  background: #1188ee;
+  font: 500 14px/18px "Poppins", sans-serif;
+  text-align: center;
+  padding: 7px 10px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 68px;
+}
+#menu {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#menu a {
+  display: block;
+  padding: 8px;
+}
+#menu a:hover {
+  transition: 200ms;
+  color: #1188ee;
+}
+
+#menu li:last-child a {
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  #menu {
+    display: none;
+  }
+}
+#menu.active {
+  gap: 8px;
+  right: 0;
+  top: 100px;
+  padding: 16px;
+  display: grid;
+  position: absolute;
+  background: var(--w);
+  animation: slide 0.2s forwards ease-in;
+  box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%);
+}
+#menu.active li + li {
+  border-top: 1px solid var(--c2);
+}
+#menu.active li:last-child {
+  margin-top: 40px;
+  border: none;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

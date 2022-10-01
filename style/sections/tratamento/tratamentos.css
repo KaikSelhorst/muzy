@@ -1,0 +1,67 @@
+.tratamentos {
+  padding-bottom: 120px;
+}
+.tratamentos dt {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.tratamentos dt::before {
+  content: "";
+  display: block;
+  width: 26px;
+  margin-right: 10px;
+  height: 11px;
+  background: var(--base);
+}
+.tratamentos dt::after {
+  content: "";
+  margin-left: 16px;
+  width: 16px;
+  height: 20px;
+  background: url("/img/seta-opaco.svg") no-repeat center;
+}
+.tratamentos ul {
+  align-content: flex-start;
+  flex-direction: column;
+  margin-left: 36px;
+  max-height: 85px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px 24px;
+}
+.tratamentos ul li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.tratamentos ul li::before {
+  content: "";
+  left: -12px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  border: 2px solid #16c70b;
+}
+.tratamentos dd + dt {
+  margin-top: 24px;
+}
+.js .tratamentos dd {
+  display: none;
+}
+.js .tratamentos dt.active + dd {
+  display: initial;
+}
+@media (max-width: 1200px) {
+  .tratamentos ul {
+    max-height: 200px;
+  }
+}
+@media (max-width: 864px) {
+  .tratamentos ul {
+    max-height: inherit;
+  }
+}

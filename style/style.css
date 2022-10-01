@@ -1,0 +1,26 @@
+/* Utilidades */
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+
+/* Componentes */
+@import "./componentes/botao.css";
+@import "./componentes/titulo.css";
+
+/* Global */
+@import "./global.css";
+
+/* Sections */
+@import "./sections/header.css";
+@import "./sections/footer.css";
+
+/* Home */
+@import "./sections/home/sobre.css";
+@import "./sections/home/especialidades.css";
+@import "./sections/home/depoimento.css";
+@import "./sections/home/contato.css";
+/* Equipe */
+@import "./sections/equipe/equipe.css";
+
+/* Tratamento */
+@import "./sections/tratamento/tratamentos.css";
+@import "./sections/tratamento/faq.css";

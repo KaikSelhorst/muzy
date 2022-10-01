@@ -1,0 +1,81 @@
+.botao-consulta {
+  text-transform: capitalize;
+  border: 2px var(--base) solid;
+  cursor: pointer;
+  color: var(--base);
+  border-radius: 4px;
+  font: 600 1.125rem/1.33 "Poppins", sans-serif;
+  padding: 10px 16px !important;
+  display: inline-block;
+}
+
+.text-botao {
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--base);
+}
+.text-botao:hover {
+  color: var(--c12);
+}
+.text-botao::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: var(--base);
+}
+.text-botao:hover::after {
+  background-color: var(--c12);
+}
+
+.botao-opaco {
+  border: none;
+  color: var(--w);
+  cursor: pointer;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  background: var(--base);
+  border-radius: 4px;
+  font: 500 1.125rem/1.33 "Poppins", sans-serif;
+}
+
+#btn-mobile {
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border: none;
+}
+#btn-mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  #btn-mobile {
+    display: block;
+  }
+  #btn-mobile > span {
+    display: block;
+    height: 3px;
+    width: 24px;
+    position: relative;
+    transition: 300ms;
+    border-radius: 4px;
+    background: var(--base);
+  }
+  #btn-mobile > span + span {
+    margin-top: 6px;
+  }
+  #btn-mobile.active span:first-child {
+    transform: translate3d(-50px, 0, 0);
+  }
+  #btn-mobile.active span:nth-child(2) {
+    transform: rotate(135deg);
+    transition-delay: 200ms;
+  }
+  #btn-mobile.active span:nth-child(3) {
+    top: -9px;
+    transform: rotate(45deg);
+  }
+}

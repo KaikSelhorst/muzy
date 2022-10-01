@@ -1,0 +1,14 @@
+.title {
+  padding-bottom: 72px;
+}
+
+.title p {
+  font: 400 1.25rem/2.1 "Roboto", sans-serif;
+  max-width: 900px;
+}
+
+@media (max-width: 864px) {
+  .title {
+    padding-bottom: 36px;
+  }
+}

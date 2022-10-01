@@ -1,0 +1,102 @@
+.card-central {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 18px;
+  margin: 0 60px 160px;
+  border-radius: 0px 4px 4px 0px;
+  background: linear-gradient(to right, var(--w) 24%, var(--base) 0%);
+}
+.card-central-text {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  max-width: 630px;
+}
+.card-central-text span {
+  display: block;
+  margin-bottom: 110px;
+}
+.card-central-text blockquote {
+  position: relative;
+}
+.card-central-text blockquote::before {
+  content: "“";
+  font: 400 7.5rem/0 "Roboto", sans-serif;
+  color: var(--w);
+  position: absolute;
+}
+
+@media (max-width: 864px) {
+  .card-central-text blockquote::before {
+    font: 400 6em/0 "Roboto", sans-serif;
+  }
+  .card-central-img {
+    display: none;
+  }
+  .card-central {
+    border-radius: 4px;
+    margin: 72px 0px 160px;
+    background: var(--base);
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+  position: relative;
+  gap: 80px 10px;
+}
+.card-container::before,
+.card-container::after {
+  content: "";
+  left: 50%;
+  display: block;
+  width: 96px;
+  transform: translate3d(-50%, 0, 0);
+  height: 1px;
+  position: absolute;
+  background: var(--c2);
+}
+.card-container::before {
+  top: -80px;
+}
+.card-container::after {
+  bottom: -80px;
+}
+.card-container li {
+  display: grid;
+  position: relative;
+  width: max-content;
+  grid-template-rows: auto 20px auto;
+}
+.card-container li img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.card-container li > div {
+  grid-column: 1;
+  padding: 16px 24px;
+  grid-row: 2 / 4;
+  margin: 0 12px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background: var(--w);
+  text-align: center;
+}
+.card-container li > span {
+  position: absolute;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  left: -16px;
+  top: 0;
+}
+
+@media (max-width: 680px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+/* Reorganizar os Estilos */

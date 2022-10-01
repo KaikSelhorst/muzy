@@ -1,0 +1,51 @@
+.faq {
+  max-width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 40px auto 160px;
+}
+.faq h2,
+.faq span {
+  text-align: center;
+  display: block;
+}
+.faq h2 {
+  margin-bottom: 98px;
+}
+.faq span {
+  font: 600 0.875rem/1.7 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.faq dt {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.faq dt::after {
+  content: "";
+  margin-left: 16px;
+  width: 16px;
+  height: 20px;
+  background: url("/img/seta-opaco.svg") no-repeat center;
+}
+
+.faq dd + dt {
+  margin-top: 72px;
+}
+.faq dd + dt::before {
+  width: 100%;
+  content: "";
+  top: -36px;
+  position: absolute;
+  display: block;
+  height: 1px;
+  background: var(--c2);
+}
+.js .faq dd {
+  display: none;
+}
+.js .faq dt.active + dd {
+  display: block;
+}

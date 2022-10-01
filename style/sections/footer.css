@@ -1,0 +1,28 @@
+.footer {
+  padding-bottom: 32px;
+  padding-top: 42px;
+  display: grid;
+  row-gap: 35px;
+  grid-template-columns: 1fr auto;
+}
+.footer ul {
+  margin-right: 40px;
+}
+.footer li + li {
+  margin-top: 4px;
+}
+.footer a {
+  padding: 10px 0;
+}
+.footer a:hover {
+  color: var(--c11);
+}
+.footer span {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
