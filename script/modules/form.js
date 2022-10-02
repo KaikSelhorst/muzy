@@ -25,5 +25,6 @@ export default class FormCheck {
     if (this.email) {
       this.addEventEmail();
     }
+    return this;
   }
 }
