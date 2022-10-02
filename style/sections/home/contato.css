@@ -121,7 +121,10 @@
   height: 4px;
   border-radius: 50%;
   display: block;
-  border: 2px solid #16c70b;
+  border: 2px solid #e54;
+}
+.contato-horario.aberto::before {
+  border-color: #16c70b;
 }
 
 @media (max-width: 900px) {

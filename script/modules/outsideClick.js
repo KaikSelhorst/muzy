@@ -28,5 +28,6 @@ export default class outsideClick {
       });
       this.element.setAttribute(this.outside, "");
     }
+    return this;
   }
 }
