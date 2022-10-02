@@ -40,7 +40,7 @@
   font: 500 1.125rem/1.33 "Poppins", sans-serif;
 }
 
-#btn-mobile {
+[data-menu="button"] {
   background: none;
   overflow: hidden;
   cursor: pointer;
@@ -48,14 +48,14 @@
   width: 24px;
   border: none;
 }
-#btn-mobile {
+[data-menu="button"] {
   display: none;
 }
 @media (max-width: 900px) {
-  #btn-mobile {
+  [data-menu="button"] {
     display: block;
   }
-  #btn-mobile > span {
+  [data-menu="button"] > span {
     display: block;
     height: 3px;
     width: 24px;
@@ -64,17 +64,17 @@
     border-radius: 4px;
     background: var(--base);
   }
-  #btn-mobile > span + span {
+  [data-menu="button"] > span + span {
     margin-top: 6px;
   }
-  #btn-mobile.active span:first-child {
+  [data-menu="button"].active span:first-child {
     transform: translate3d(-50px, 0, 0);
   }
-  #btn-mobile.active span:nth-child(2) {
+  [data-menu="button"].active span:nth-child(2) {
     transform: rotate(135deg);
     transition-delay: 200ms;
   }
-  #btn-mobile.active span:nth-child(3) {
+  [data-menu="button"].active span:nth-child(3) {
     top: -9px;
     transform: rotate(45deg);
   }
