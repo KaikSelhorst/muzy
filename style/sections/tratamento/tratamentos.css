@@ -54,6 +54,7 @@
 }
 .js .tratamentos dt.active + dd {
   display: initial;
+  animation: tratamentoSlideDown 0.5s forwards;
 }
 @media (max-width: 1200px) {
   .tratamentos ul {
@@ -63,5 +64,14 @@
 @media (max-width: 864px) {
   .tratamentos ul {
     max-height: inherit;
+  }
+}
+
+@keyframes tratamentoSlideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
