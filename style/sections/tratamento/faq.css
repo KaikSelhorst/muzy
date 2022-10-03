@@ -27,10 +27,13 @@
   content: "";
   margin-left: 16px;
   width: 16px;
+  transition: 200ms;
   height: 20px;
   background: url("/img/seta-opaco.svg") no-repeat center;
 }
-
+[data-accordion="list"] dt.active::after {
+  transform: rotate(-180deg);
+}
 .faq dd + dt {
   margin-top: 72px;
 }

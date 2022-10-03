@@ -17,6 +17,7 @@
 }
 .tratamentos dt::after {
   content: "";
+  transition: 200ms;
   margin-left: 16px;
   width: 16px;
   height: 20px;
