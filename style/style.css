@@ -1,6 +1,7 @@
 /* Utilidades */
 @import "./utilidades/cores.css";
 @import "./utilidades/tipografia.css";
+@import "./utilidades/animation.css";
 
 /* Componentes */
 @import "./componentes/botao.css";
