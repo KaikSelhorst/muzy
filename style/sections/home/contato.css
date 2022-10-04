@@ -82,7 +82,7 @@
 .contato-list > li + li {
   margin-top: 8px;
 }
-.contato-informacoes h3 {
+.contato-informacoes h2 {
   margin-bottom: 8px;
 }
 .botao-mapa {
@@ -105,7 +105,7 @@
   display: flex;
   gap: 24px;
 }
-.contato-telefone h4 {
+.contato-telefone h3 {
   margin-bottom: 8px;
 }
 
@@ -115,7 +115,7 @@
 .contato-horario::before {
   content: "";
   left: -12px;
-  top: 8px;
+  top: -23px;
   position: absolute;
   width: 4px;
   height: 4px;
