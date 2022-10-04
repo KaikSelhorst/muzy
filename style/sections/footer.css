@@ -5,10 +5,10 @@
   row-gap: 35px;
   grid-template-columns: 1fr auto;
 }
-.footer ul {
+.footer dl {
   margin-right: 40px;
 }
-.footer li + li {
+.footer dd + dd {
   margin-top: 4px;
 }
 .footer a {
