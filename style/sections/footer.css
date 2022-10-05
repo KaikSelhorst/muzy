@@ -8,11 +8,9 @@
 .footer dl {
   margin-right: 40px;
 }
-.footer dd + dd {
-  margin-top: 8px;
-}
 .footer a {
-  padding: 16px 0;
+  display: block;
+  padding: 8px 0;
 }
 .footer a:hover {
   color: var(--c11);
