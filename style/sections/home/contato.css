@@ -115,7 +115,7 @@
 .contato-horario::before {
   content: "";
   left: -12px;
-  top: -23px;
+  top: -25px;
   position: absolute;
   width: 4px;
   height: 4px;
