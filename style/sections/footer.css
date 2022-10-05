@@ -9,10 +9,10 @@
   margin-right: 40px;
 }
 .footer dd + dd {
-  margin-top: 4px;
+  margin-top: 8px;
 }
 .footer a {
-  padding: 10px 0;
+  padding: 16px 0;
 }
 .footer a:hover {
   color: var(--c11);
