@@ -1,0 +1,31 @@
+.politica {
+  max-width: 880px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px auto 120px;
+}
+.politica span,
+.politica h1:first-child {
+  display: block;
+  text-align: center;
+}
+.politica span {
+  margin-bottom: 120px;
+}
+.politica h1 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.politica p + p {
+  margin-top: 24px;
+}
+
+@media (max-width: 864px) {
+  .politica {
+    margin: 0px auto 80px;
+  }
+  .politica span {
+    margin-bottom: 80px;
+  }
+}
