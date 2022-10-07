@@ -17,8 +17,10 @@ formulario.init();
 const horario = new Horario(".contato-horario", "aberto");
 horario.init();
 
-const accordion = new Accordion('[data-accordion="list"] dt', "active");
+const accordion = new Accordion('[data-accordion="list"] dt');
 accordion.init();
+const accordionTramento = new Accordion('[data-accordion="tratamento"] dt');
+accordionTramento.init();
 
 const scrollAnima = new ScrollAnima("[data-anima]", "ativo");
 scrollAnima.init();
