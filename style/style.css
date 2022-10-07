@@ -25,3 +25,6 @@
 /* Tratamento */
 @import "./sections/tratamento/tratamentos.css";
 @import "./sections/tratamento/faq.css";
+
+/* Politica */
+@import "./sections/politica/politica.css";
