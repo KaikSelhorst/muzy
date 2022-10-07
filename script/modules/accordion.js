@@ -1,7 +1,7 @@
 export default class Accordion {
   constructor(list, classActive) {
     this.list = document.querySelectorAll(list);
-    this.classActive = classActive;
+    this.classActive = classActive || "active";
   }
 
   toggleAccordion(item) {
@@ -16,6 +16,7 @@ export default class Accordion {
 
   init() {
     if (this.list.length) {
+      this.toggleAccordion(this.list[0]);
       this.addEventAccordion();
     }
     return this;
