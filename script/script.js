@@ -3,6 +3,7 @@ import Horario from "./modules/horario.js";
 import MenuMobile from "./modules/menuMobile.js";
 import Accordion from "./modules/accordion.js";
 import ScrollAnima from "./modules/anima-scroll.js";
+import ActiveLink from "./modules/activeLink.js";
 
 const menuMobile = new MenuMobile(
   "[data-menu='button'] ",
@@ -24,3 +25,6 @@ accordionTramento.init();
 
 const scrollAnima = new ScrollAnima("[data-anima]", "ativo");
 scrollAnima.init();
+
+const activeLink = new ActiveLink("[data-link] a", "active");
+activeLink.init();
