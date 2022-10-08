@@ -37,3 +37,9 @@
 .depoimento img {
   max-height: 24px;
 }
+
+@media (max-width: 864px) {
+  .depoimento-bg {
+    margin-bottom: 80px;
+  }
+}

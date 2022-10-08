@@ -37,6 +37,9 @@
 }
 
 @media (max-width: 864px) {
+  .sobre-bg {
+    margin-bottom: 40px;
+  }
   .sobre-imagem {
     display: none;
   }
