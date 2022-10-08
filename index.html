@@ -150,7 +150,7 @@
   </article>
   <article class="container-small contato" data-anima='scroll'>
     <h1 class="font-1-xxl cor-11">Contato</h1>
-    <form action="">
+    <form action="https://formsubmit.co/selhorstoficial@gmail.com" method="POST">
       <label for="nome" class="font-1-m-b cor-8">Nome</label>
       <input type="text" name="nome" id="nome" required />
       <label for="email" class="font-1-m-b cor-8">Email</label>
@@ -159,6 +159,11 @@
       <input type="text" name="assunto" id="assunto" required />
       <label for="mensagem" class="font-1-m-b cor-8">Mensagem</label>
       <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+
+      <!-- Form Submit -->
+      <input type="hidden" name="_autoresponse" value="Nós recebemos sua mensagem, responderemos em breve.">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://muzy.vercel.app/email.html">
 
       <button class="botao-opaco" type="submit">ENVIAR MENSAGEM</button>
     </form>

@@ -1,0 +1,25 @@
+.email {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.email div {
+  display: grid;
+  justify-items: center;
+}
+
+.email img {
+  margin-bottom: 48px;
+}
+.email h1 {
+  margin-bottom: 24px;
+}
+.email p {
+  margin-bottom: 54px;
+  max-width: 54ch;
+}

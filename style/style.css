@@ -28,3 +28,7 @@
 
 /* Politica */
 @import "./sections/politica/politica.css";
+
+/* Email */
+
+@import "./sections/email/email.css";
