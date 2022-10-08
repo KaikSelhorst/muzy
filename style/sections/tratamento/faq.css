@@ -64,3 +64,8 @@
     opacity: 1;
   }
 }
+@media (max-width: 864px) {
+  .faq {
+    margin: 40px auto 120px;
+  }
+}
