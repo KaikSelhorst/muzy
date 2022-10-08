@@ -24,9 +24,11 @@
 }
 [data-menu="list"] a:hover {
   transition: 200ms;
-  color: #1188ee;
+  color: var(--base);
 }
-
+[data-link="header"] a.active {
+  color: var(--base);
+}
 [data-menu="list"] li:last-child a {
   white-space: nowrap;
 }

@@ -15,6 +15,9 @@
 .footer a:hover {
   color: var(--c11);
 }
+[data-link="footer"] a.active {
+  color: var(--c11);
+}
 .footer span {
   grid-column: 1 / -1;
 }
