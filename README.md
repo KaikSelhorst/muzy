@@ -21,7 +21,6 @@ desses email. Somente esse foi o script externo utilizado em toda a aplicação.
 
 ## Instalação do Projeto
 
-<br>
 
 ### Requisitos recomendados:
 
@@ -83,8 +82,6 @@ Para
 
 Feito isso Divirta-se.
 
-<br>
-<br>
 
 ## Desenvolvedor
 
