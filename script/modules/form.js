@@ -1,10 +1,19 @@
 export default class FormCheck {
-  constructor(email, correct, incorrect) {
+  constructor(email, btn, correct, incorrect) {
     this.email = document.querySelector(email);
+    this.btn = document.querySelector(btn);
     this.correct = correct;
     this.incorrect = incorrect;
 
     this.checkEmail = this.checkEmail.bind(this);
+  }
+
+  submitBtn() {
+    if (!this.email.classList.contains(this.correct)) {
+      this.btn.setAttribute("disabled", "");
+    } else {
+      this.btn.removeAttribute("disabled");
+    }
   }
 
   checkEmail({ target }) {
@@ -15,6 +24,7 @@ export default class FormCheck {
       target.classList.remove(this.correct);
       target.classList.add(this.incorrect);
     }
+    this.submitBtn();
   }
 
   addEventEmail() {
@@ -24,6 +34,7 @@ export default class FormCheck {
   init() {
     if (this.email) {
       this.addEventEmail();
+      this.submitBtn();
     }
     return this;
   }
