@@ -27,6 +27,7 @@ export default class ScrollAnima {
         item.element.classList.add(this.classActive);
       }
     });
+    this.stop();
   }
 
   init() {
@@ -40,6 +41,9 @@ export default class ScrollAnima {
 
   // Remove o event de scroll
   stop() {
-    window.removeEventListener("scroll", this.checkDistance);
+    const ultimo = this.distance.slice(-1)[0].element;
+    if (ultimo.classList.contains(this.classActive)) {
+      window.removeEventListener("scroll", this.checkDistance);
+    }
   }
 }
