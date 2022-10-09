@@ -62,6 +62,12 @@
 [data-form="email"].correto {
   border-color: #16c70b;
 }
+[data-form="button"] {
+  opacity: 1;
+}
+[data-form="button"]:disabled {
+  opacity: 0.5;
+}
 /* Contato informaçoes */
 .contato-informacoes {
   max-width: 360px;

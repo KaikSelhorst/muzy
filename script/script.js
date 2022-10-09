@@ -12,7 +12,12 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-const formulario = new FormCheck("[data-form='email']", "correto", "incorreto");
+const formulario = new FormCheck(
+  "[data-form='email']",
+  "[data-form='button']",
+  "correto",
+  "incorreto"
+);
 formulario.init();
 
 const horario = new Horario(".contato-horario", "aberto");
