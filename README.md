@@ -12,7 +12,7 @@ para a estruturação, css para a estilização, e javascript para as funcionali
 ## Implementações futuras:
 
 - Um back-end proprio para o envio de email.
-- Modificações no script de animação ao scroll.
+- ~~Modificações no script de animação ao scroll.~~
 - Melhorias nas imagens da página Equipe
 
 <br>
