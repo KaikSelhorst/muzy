@@ -26,20 +26,6 @@
   position: absolute;
 }
 
-@media (max-width: 864px) {
-  .card-central-text blockquote::before {
-    font: 400 6em/0 "Roboto", sans-serif;
-  }
-  .card-central-img {
-    display: none;
-  }
-  .card-central {
-    border-radius: 4px;
-    margin: 72px 0px 160px;
-    background: var(--base);
-  }
-}
-
 .card-container {
   display: flex;
   justify-content: space-between;
@@ -86,6 +72,7 @@
   text-align: center;
 }
 .card-container li > span {
+  cursor: pointer;
   position: absolute;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -99,4 +86,16 @@
   }
 }
 
-/* Reorganizar os Estilos */
+@media (max-width: 864px) {
+  .card-central-text blockquote::before {
+    font: 400 6em/0 "Roboto", sans-serif;
+  }
+  .card-central-img {
+    display: none;
+  }
+  .card-central {
+    border-radius: 4px;
+    margin: 72px 0px 160px;
+    background: var(--base);
+  }
+}
