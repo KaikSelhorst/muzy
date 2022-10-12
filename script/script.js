@@ -4,6 +4,7 @@ import MenuMobile from "./modules/menuMobile.js";
 import Accordion from "./modules/accordion.js";
 import ScrollAnima from "./modules/anima-scroll.js";
 import ActiveLink from "./modules/activeLink.js";
+import Copy from "./modules/copy.js";
 
 const menuMobile = new MenuMobile(
   "[data-menu='button'] ",
@@ -33,3 +34,6 @@ scrollAnima.init();
 
 const activeLink = new ActiveLink("[data-link] a", "active");
 activeLink.init();
+
+const copy = new Copy("[data-copy]", "Valor Copiado!");
+copy.init();

@@ -6,6 +6,7 @@
 /* Componentes */
 @import "./componentes/botao.css";
 @import "./componentes/titulo.css";
+@import "./componentes/copy-popup.css";
 
 /* Global */
 @import "./global.css";
