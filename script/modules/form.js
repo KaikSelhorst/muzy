@@ -16,11 +16,33 @@ export default class FormCheck {
     }
   }
 
+  newSpan() {
+    const span = document.createElement("span");
+    span.innerHTML = "Endereço de email incorreto";
+    span.classList.add("font-2-s", "cor-red");
+    this.span = span;
+  }
+
+  adicionarSpan() {
+    // Cria o Span
+    this.newSpan();
+    // Adiciona o Span na frente do this.email
+    const elementoAnterior = this.email.nextElementSibling;
+    this.email.parentNode.insertBefore(this.span, elementoAnterior);
+  }
+
   checkEmail({ target }) {
+    // Remove o span Caso Exista
+    if (this.span) {
+      this.span.remove();
+    }
+    // Verifica se o email está correto
     if (target.value.match(/[\w.-]+@[\w-]+\.[\w-.]+/gi)) {
       target.classList.remove(this.incorrect);
       target.classList.add(this.correct);
     } else {
+      // Adiciona o span para indicar se o email está incorreto
+      this.adicionarSpan();
       target.classList.remove(this.correct);
       target.classList.add(this.incorrect);
     }
