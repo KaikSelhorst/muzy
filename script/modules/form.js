@@ -16,12 +16,17 @@ export default class FormCheck {
     }
   }
 
-  addSpan() {
+  newSpan() {
     const span = document.createElement("span");
     span.innerHTML = "Endereço de email incorreto";
     span.classList.add("font-2-s", "cor-red");
     this.span = span;
+  }
 
+  adicionarSpan() {
+    // Cria o Span
+    this.newSpan();
+    // Adiciona o Span na frente do this.email
     const elementoAnterior = this.email.nextElementSibling;
     this.email.parentNode.insertBefore(this.span, elementoAnterior);
   }
@@ -37,7 +42,7 @@ export default class FormCheck {
       target.classList.add(this.correct);
     } else {
       // Adiciona o span para indicar se o email está incorreto
-      this.addSpan();
+      this.adicionarSpan();
       target.classList.remove(this.correct);
       target.classList.add(this.incorrect);
     }
