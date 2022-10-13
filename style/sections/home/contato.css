@@ -51,13 +51,14 @@
   max-width: 440px;
   margin-bottom: 32px;
 }
-.contato label + input {
+.contato input + label {
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 [data-form="email"].incorreto {
   box-shadow: 0px 0px 0px 2px RGBA(238, 85, 68, 0.25);
-  border-color: #e54;
+  border-color: var(--cr);
 }
 [data-form="email"].correto {
   border-color: #16c70b;
@@ -127,7 +128,7 @@
   height: 4px;
   border-radius: 50%;
   display: block;
-  border: 2px solid #e54;
+  border: 2px solid var(--cr);
 }
 .contato-horario.aberto::before {
   border-color: #16c70b;
