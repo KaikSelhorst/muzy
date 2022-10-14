@@ -18,6 +18,7 @@
 }
 .faq dt {
   display: flex;
+  justify-content: space-between;
   position: relative;
   cursor: pointer;
   margin-bottom: 8px;
@@ -31,7 +32,7 @@
   height: 20px;
   background: url("/img/seta-opaco.svg") no-repeat center;
 }
-[data-accordion="list"] dt.active::after {
+[data-accordion] dt.active::after {
   transform: rotate(-180deg);
 }
 .faq dd + dt {
