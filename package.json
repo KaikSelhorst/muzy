@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch --entry ./script/script.js -o ./",
-    "build": "webpack --mode production --entry ./script/script.js -o ./",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
     "mincss": "cleancss -o ./style/style.min.css ./style/style.css"
   },
   "license": "ISC",
