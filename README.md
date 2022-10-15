@@ -5,8 +5,7 @@ para a estruturação, css para a estilização, e javascript para as funcionali
 
 ## Desafios que enfrentei:
 
-- Por utilizar linguagens Simples, para uma aplicação desse nível o código acaba sendo um pouco complexo, mas com a utilização de ferramentas como [Webpack](https://webpack.js.org/)
-  e [Cleancss](https://www.npmjs.com/package/clean-css) esses problemas foram sanados.
+- Por utilizar linguagens Simples, para uma aplicação desse nível o código acaba sendo um pouco complexo, mas com a utilização de ferramentas como [gulp](https://gulpjs.com/) esses problemas foram sanados.
 - Imagens com uma variação de cor não muito específica, durante o design encontrei problemas com as imagens da página Equipe que estavam com uma coloração meio estranha, mas com a ferramenta de edição de imagem do próprio [figma](https://www.figma.com/) conseguir resolver.
 
 ## Implementações futuras:
@@ -19,15 +18,11 @@ para a estruturação, css para a estilização, e javascript para as funcionali
 
 ## Instalação do Projeto
 
-### Requisitos recomendados:
+### Requisitos minimos:
 
 - Node / Npm
-- Clean-css-cli
-- LiveServer (extenção vscode)
 
 <br>
-
-Após verificar os requisitos recomendados faça:
 
 ```sh
 git clone https://github.com/KaikSelhorst/muzy.git
@@ -35,46 +30,47 @@ git clone https://github.com/KaikSelhorst/muzy.git
 
 Abra o repositorio baixado no seu Editor de codigo [Vscode](https://code.visualstudio.com/), [SublimeText](https://www.sublimetext.com/), etc...
 
-### Para o Javascript
-
-Vá no terminal e com o node / npm instalado execute:
-
-Para desenvolvimento:
-
 ```sh
-npm run dev
+npm install
 ```
 
-Para produção ou commit final:
+<br>
 
+## Automatização
+Esta automatização esta sendo feita com [gulp](https://gulpjs.com/),ele vai automatiza o js e css!
+
+*Os comandos basico para o funcionamento são:*
+
+Comando para Desenvolvimento
 ```sh
-npm run build
+gulp
 ```
 
-### Para o CSS
-
-Como o css no final está sendo compilado utilizando `Clean-css-cli` o código deverá ser executado a cada mudança no css
+Comando para produção(commit):
 
 ```sh
-cleancss -o ./style/style.min.css ./style/style.css
+gulp build
 ```
 
-Caso não tenha instalado o `Clean-css-cli` execute:
+Caso não queira utilizar o gulp, basta mudar as seguintes linhas:
 
-```sh
-npm install Clean-css-cli
+*JavaScript*
+```html 
+<script src="./main.js"></script>
+
+<!--Para-->
+
+<script type='module' src="./script/script.js"></script>
+
 ```
-
-Caso não queira fazer isso basta ir nos arquivo `.html` e modificar a linha
-
-```html
+*Css*
+```html 
 <link rel="stylesheet" href="/style.min.css" />
-```
 
-Para
+<!--Para-->
 
-```html
 <link rel="stylesheet" href="/style/style.css" />
+
 ```
 
 Feito isso Divirta-se.
