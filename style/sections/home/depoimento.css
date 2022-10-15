@@ -23,6 +23,7 @@
 }
 .depoimento p {
   text-align: center;
+  max-width: 55ch;
 }
 .depoimento::after {
   content: "”";

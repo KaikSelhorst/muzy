@@ -26,7 +26,7 @@ function productionJS() {
 }
 
 function watch() {
-  gulp.watch("./style/*.css", mincss);
+  gulp.watch(["./style/*.css", "./style/**/*.css"], mincss);
   gulp.watch("./script/*.js", developmentJS);
 }
 
