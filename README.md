@@ -19,7 +19,6 @@ para a estruturação, css para a estilização, e javascript para as funcionali
 
 ## Instalação do Projeto
 
-
 ### Requisitos recomendados:
 
 - Node / Npm
@@ -69,7 +68,7 @@ npm install Clean-css-cli
 Caso não queira fazer isso basta ir nos arquivo `.html` e modificar a linha
 
 ```html
-<link rel="stylesheet" href="/style/style.min.css" />
+<link rel="stylesheet" href="/style.min.css" />
 ```
 
 Para
@@ -79,7 +78,6 @@ Para
 ```
 
 Feito isso Divirta-se.
-
 
 ## Desenvolvedor
 
