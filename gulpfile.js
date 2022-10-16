@@ -30,12 +30,12 @@ function watch() {
   gulp.watch("./script/*.js", developmentJS);
 }
 
-gulp.task("devjs", developmentJS);
-gulp.task("buildjs", productionJS);
-gulp.task("mincss", mincss);
-gulp.task("watch", watch);
+exports.development = developmentJS;
+exports.production = productionJS;
+exports.mincss = mincss;
+exports.watch = watch;
 
 // Mode Development --watch
-gulp.task("default", gulp.parallel("watch", "devjs", "mincss"));
+exports.default = gulp.parallel(watch, developmentJS, mincss);
 // Mode Build
-gulp.task("build", gulp.parallel("mincss", "buildjs"));
+exports.build = gulp.parallel(mincss, productionJS);
